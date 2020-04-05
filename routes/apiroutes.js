@@ -31,10 +31,10 @@ module.exports = function(app) {
         const id = params.id;
         let previousExercises = [];
 
-        // gets all the currently saved exercises in the current workout
+        
         db.Workout.find({_id: id})
             .then(dbWorkout => {
-                // console.log(dbWorkout)
+                
                 prevoiusExercises = dbWorkout[0].exercises;
                 res.json(dbWorkout[0].exercises);
                 let allExercises = [...previousExercises, body]
