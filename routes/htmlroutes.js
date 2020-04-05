@@ -1,15 +1,12 @@
-const path = require('path')
+const path = require("path");
 
-module.exports = function (app) {
-    app.get('/', (_, res) => {
-        res.sendFile(path.join(__dirname, '../public/index.html'))
-    })
-
-    app.get('/exercise', (_, res) => {
-        res.sendFile(path.join(__dirname, '../public/exercise.html'))
-    })
-
-    app.get('/stats', (_, res) => {
-        res.sendFile(path.join(__dirname, '../public/stats.html'))
-    })
-}
+module.exports = function(app) {
+  
+  app.get("/exercise", function(_, res) {
+    res.sendFile(path.join(__dirname, "../public/exercise.html"));
+  });
+  // Not quite sure what this is used for yet ....
+  app.get("/stats", function(_, res) {
+    res.sendFile(path.join(__dirname, "../public/stats.html"));
+  });
+};
