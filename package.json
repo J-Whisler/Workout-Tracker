@@ -13,8 +13,14 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "mongoclient": "^1.0.3",
+    "mongodb": "^3.5.5",
+    "mongojs": "^3.1.0",
     "mongoose": "^5.9.7",
     "morgan": "^1.10.0",
     "path": "^0.12.7"
+  },
+  "resolutions": {
+    "react-dev-utils": "10.1.0"
   }
 }
